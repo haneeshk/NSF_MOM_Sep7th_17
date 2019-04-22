@@ -1,7 +1,7 @@
 # Fdb version 3
-["bibtex ProjectDescription"] 1541284695 "ProjectDescription.aux" "ProjectDescription.bbl" "ProjectDescription" 1541298318
+["bibtex ProjectDescription"] 1555967389 "ProjectDescription.aux" "ProjectDescription.bbl" "ProjectDescription" 1555967389
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1480098433 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "ProjectDescription.aux" 1541284695 40610 4cdb910f19fdcc93decb0257534eb4a1 ""
+  "ProjectDescription.aux" 1555967389 40610 dd18442a65240eea14705e8e1c766a55 ""
   "nsfCareer.bib" 1505399965 99619 3304e7f50d8ac2ad023635fe475dd37f ""
   (generated)
   "ProjectDescription.blg"
@@ -10,7 +10,7 @@
   "ProjectDescription.xdv" 1541284695 173928 9cfc43a1e2bbcc37f15e42e2f56d96d5 "xelatex"
   (generated)
   "ProjectDescription.pdf"
-["xelatex"] 1541284694 "ProjectDescription.tex" "ProjectDescription.xdv" "ProjectDescription" 1541298318
+["xelatex"] 1555967387 "ProjectDescription.tex" "ProjectDescription.xdv" "ProjectDescription" 1555967387
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm" 1480098688 6628 34c39492c0adc454c1c199922bba8363 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8tn.tfm" 1480098688 6632 caf79b1b78b2b28c2b73ebe1b2ae76b0 ""
@@ -233,16 +233,16 @@
   "Figures/Introduction/CrackPathSim_V1.pdf" 1505365386 1746382 bf338db4d3811370411a80d16032b3e5 ""
   "Figures/Introduction/CrackPath_V2.pdf" 1504879372 2711158 1851aac795135fa18da9f135584e0ef0 ""
   "Figures/Introduction/IntroFig_V7.pdf" 1505327461 3405912 b319547fd79eea47bdbbda7f14797c62 ""
+  "Figures/Spicule/Layer_spicule_ver11.pdf" 1505407337 1326841 7bd3aefed9281aa33e691f98f6340640 ""
   "Figures/VRF/Figure1_box_ver9.pdf" 1504879078 1243529 c2821cf6f549c96df2fd2a73a32f8aba ""
   "Figures/WavyInterface/SinusoidalInterfaceFigCrackPropagation_V8.pdf" 1505397462 5867999 67a9e97b81d1043a3cce419f9a85d801 ""
   "Figures/XFEM/concrete_ver4.pdf" 1505407543 515967 482abaf340fff372ace08fdd0c0203e5 ""
-  "Figures/spicule/Layer_spicule_ver11.pdf" 1505407337 1326841 7bd3aefed9281aa33e691f98f6340640 ""
   "ProjectDescription.aux" 1541284695 40610 4cdb910f19fdcc93decb0257534eb4a1 ""
   "ProjectDescription.bbl" 1541284696 26137 f6fa67d92dd9f3e36abc132304462623 "bibtex ProjectDescription"
   "ProjectDescription.out" 1541284695 2970 70fe293739b308cd8234b67ee0c12545 ""
-  "ProjectDescription.tex" 1505407984 79214 4e6f8c95ac87e87b97955f46f98e02de ""
+  "ProjectDescription.tex" 1555967387 78963 c4122bc85cd18d69b3d1b96f5acf2d06 ""
   (generated)
+  "ProjectDescription.log"
   "ProjectDescription.out"
   "ProjectDescription.xdv"
-  "ProjectDescription.log"
   "ProjectDescription.aux"
