@@ -1,0 +1,85 @@
+\documentclass[10pt,onecolumn]{article}
+
+%% PREAMBLE
+\usepackage{amsmath, amssymb}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue]{hyperref}
+
+\usepackage{mathptmx}
+
+\usepackage[a4paper, total={7in, 9.5in}]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{14}{14}\selectfont}
+
+\pagenumbering{gobble}
+
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\e}{\bs{\epsilon}}
+\newcommand{\s}{\bs{\sigma}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\eS}{\mathcal{S}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Phase field evolution equation}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+The evolution equation for the phase field parameter $d$ is given by Eqn.(41) in \cite{miehe2010} as
+%
+\begin{equation}
+\label{miehe41}
+\frac{g_c}{l}\left[d-l^2\Delta d\right]=-g^\prime(d)\Psi_0,
+\end{equation}
+%
+where $g(d)$ is the strain energy degradation function, $g_c$ and $l$ are constants, and $\Delta$ denotes the Laplacian operator. We rearrange Eqn.\eqref{miehe41} and get
+%
+\begin{equation}
+\label{goveq1}
+\Delta d-\frac{d}{l^2}=\frac{g^\prime(d)\Psi_0}{g_c l}.
+\end{equation}
+%
+The ``reference'' strain energy density, $\Psi_0$, is defined in Eqn.(19) from \cite{miehe2010} as 
+%
+\begin{equation}
+\label{strainenergy}
+\Psi_0=\frac{1}{2} \e:\C:\e,
+\end{equation}
+%
+where  $\e$ is the total infinitesimal strain tensor and $\C$ is the elastic stiffness tensor. Per Eqn.(23) in \cite{miehe2010}, the Cauchy stress $\s=g(d) \C:\e$ but by definition $\s=\C:\e_e$, where $\e_e$ is the elastic strain. Therefore,
+%
+\[\e_e=g(d)\e.\]
+%
+Replacing $\e$ with $\e_e$ in Eqn.\eqref{strainenergy} we get
+%
+\begin{equation}
+\label{strainenergy2}
+\Psi_0=\frac{1}{2}\frac{1}{g(d)^2}\e_e:\C:\e_e.
+\end{equation}
+%
+Note that the strain energy density $\Psi=g(d) \Psi_0$ is \emph{not} the typical definition of the strain energy density and has an additional multiplicative factor of $1/g(d)$ in Miehe's formulation. If we define an elastic compliance tensor as $\eS=\C^{-1}$, then $\e_e=\eS:\s$ and
+%
+\begin{equation}
+\label{strainenergy3}
+\Psi_0=\frac{1}{2}\frac{1}{g(d)^2}\s:\eS:\s.
+\end{equation}
+%
+Substituting this into Eqn.\eqref{goveq1}, we get
+%
+\begin{equation}
+\label{goveq2}
+\Delta d-\frac{d}{l^2}=\frac{1}{2g_c l}\frac{g^\prime(d)}{g(d)^2} \s:\eS:\s
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{unsrt}
+\bibliography{bib1}
+
+\end{document}

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: XFEM_drawbacks.aux
+The style file: plain.bst
+Database file #1: Mybib.bib
+Warning--empty journal in abaqus2014
+Warning--empty journal in FRANC3D
+Warning--empty journal in Sierra
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            676 strings with 9091 characters,
+and the built_in function-call counts, 10538 in all, are:
+= -- 1060
+> -- 503
+< -- 1
++ -- 208
+- -- 168
+* -- 836
+:= -- 1777
+add.period$ -- 91
+call.type$ -- 30
+change.case$ -- 173
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 339
+empty$ -- 793
+format.name$ -- 168
+if$ -- 2117
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 31
+newline$ -- 153
+num.names$ -- 60
+pop$ -- 137
+preamble$ -- 1
+purify$ -- 144
+quote$ -- 0
+skip$ -- 222
+stack$ -- 0
+substring$ -- 836
+swap$ -- 34
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 118
+warning$ -- 3
+while$ -- 113
+width$ -- 32
+write$ -- 326
+(There were 3 warnings)

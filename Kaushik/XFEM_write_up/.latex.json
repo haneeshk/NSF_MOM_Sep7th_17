@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/Haneesh/Dropbox (Brown)/WorkHK/ProposalsHK/2016Fa_16Win_17Sp/NSF_MOM_Sep7th_17/Kaushik/XFEM_write_up",
+  "title": "LaTeX-Plus Project",
+  "root": "XFEM_drawbacks_HK.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}

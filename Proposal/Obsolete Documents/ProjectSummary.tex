@@ -1,0 +1,62 @@
+%
+\documentclass[10pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setallmargins{1in}
+
+\usepackage[margin=1in]{geometry}
+
+
+%\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%%\usepackage{cmbright}
+\usepackage[scaled=1]{helvet}
+
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+%\usepackage{tikz}
+%\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+%\usepackage[usenames]{color}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{showlabels}
+%\usepackage{labels}
+%\hypersetup{colorlinks=false}
+%\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+
+
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+ 
+\begin{center}\textbf{\large{Project Summary}}\end{center}
+ 
+\paragraph{Overview:}
+The PI proposes to investigate the following hypothesis: The extraordinary toughness of structural biomaterials (SBs) is a result of interfaces that are densely distributed within the material and act as traps to prevent the growth of cracks. Despite the fact that SBs, such as bones and shells, are composed of brittle, ceramic materials, they display extraordinary toughness. While it is generally believed that a SB's toughness is a consequence of how its ceramic components are arranged, the mechanisms through which this arrangement enhances toughness are not well-understood. The PI believes that this is due to the lack of a strategy for identifying which features in a SB's mechanical design are most critical for increasing toughness. The PI proposes to investigate the relationship between the features of a SB's mechanical design and the SB's toughness by developing a computational tool that is able to predict the fracture behavior of SBs. While there do exist computational tools for simulating fracture, none are able to handle the complexity of the crack patterns observed in SBs. Phase field theory (PFT) has recently been presented as a promising alternative for simulating complex fracture processes, like crack branching and fragmentation. Currently, however, PFT cannot be used to simulate fracture in SBs with densely distributed interfaces since a) there is no established way of modeling interfaces using PFT and b) PFT suffers from a crack broadening effect that leads to unphysical predictions. The PI's preliminary results identify a potential cause of crack broadening and demonstrate the viability of a new methodology for modeling interfaces in PFT. The PI proposes to reformulate the current PFT using these results and then build a computational tool based on this new PFT to simulate fracture in SBs.  The PI will compare fracture simulations with fracture experiments he performs on a prototypical SB to validate the tool's predictive capabilities. Finally, the PI will use the computational tool to uncover new toughening mechanisms in a material whose interfaces form wavy patterns.
+
+\paragraph{Intellectual Merit:}
+The fact that the relationship between a SB's mechanical design and its toughness is not well-understood indicates that this problem contains a wealth of undiscovered mechanics principles. By providing a way to ``see'' inside a material as it fails, the proposed PFT computational tools can be used to explore new mechanical phenomena, such as new mechanisms for enhancing a material's toughness. The insight gained from this kind of exploration can be used to guide the development of new applied mechanics models that accurately capture these toughening mechanisms. Furthermore, the ability to predict the mechanics of fracture in materials with complex mechanical designs is a critical prerequisite to being able to design new materials with tunable mechanical properties. In this way the PI envisions the proposed research as a step toward creating the next generation of tough, bio-inspired materials.
+
+\paragraph{Broader Impacts:}
+The proposed PFT computational tool's generality and its ability to accurately predict the mechanical responses of materials with complex architectures will make it valuable for designing new materials, such as ceramic matrix composites, for the transportation and energy production sectors.
+
+The PI plans to integrate the proposed research with a wide range of educational outreach activities. (i) The PI will collaborate with the Sci-Toons initiative at Brown to create educational videos related to bio-inspired engineering that are designed to reach a broad audience. The Sci-Toons videos use engaging storytelling to allow the general public to develop a greater understanding and appreciation of science. Through the use of ``jargon free'' language these videos also create new opportunities for dialogue between STEM and non-STEM majors. (ii) The PI and his students will collaborate with the SPIRA camp at Brown, which focuses on empowering high school age girls to pursue education in STEM fields. Specifically, the PI will use his research on bio-inspired materials to showcase some of the exciting new opportunities that await the next generation of engineers. The PI will expose the students to core concepts in mechanics and the design of structural materials through activities such as the ``Soft landing: better materials for tomorrow's helmets and cars'' egg drop competition and the hands on exploration of different materials' microscopic architectures. The proposed activities are designed to bolster public awareness of exciting new developments in bio-inspired engineering, and to specifically focus on motivating female high school students to pursue careers in science and engineering.
+
+\end{document}

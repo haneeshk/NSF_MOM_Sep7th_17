@@ -1,0 +1,58 @@
+\documentclass[10pt,onecolumn]{article}
+
+%% PREAMBLE
+\usepackage{amsmath, amssymb}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage{epsfig,epstopdf,xcolor}
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue]{hyperref}
+
+\usepackage{mathptmx}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
+\setlength{\parindent}{3ex}
+\setlength{\parskip}{0.5em}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{12}\selectfont}
+
+\pagenumbering{arabic}
+
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\e}{\bs{\epsilon}}
+\newcommand{\s}{\bs{\sigma}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\eS}{\mathcal{S}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Phase field theory}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+{\color{gray}{\textit{In order to grasp the fundamental theory of phase field, I need to carefully read the following papers~\cite{francfort1998revisiting, bourdin2000numerical, bourdin2008variational, hakim2009laws, miehe2010, miehe2010phase, borden2012phase, ambati2015review}.}}}
+
+
+
+The total energy of the body containing cracks includes bulk elastic energy and surface energy. It is a postulation, instead of derived from any known thermodynamical argument, that the evolution of crack surface should always minimize the total energy. The evolution of the crack obeys the following law: (a) Irreversibility condition requires the crack grows with time or external loading; (b) The total energy of the actual crack is minimal among all the possible compatible cracks at a given time; and (c) The total energy of the actual crack at the current time should be lower than that of all prior cracks for a fixed loading~\cite{francfort1998revisiting}. 
+
+The strong formulation of the problem lies in a domain containing a sharp crack surface topology with displacement discontinuity, which is very difficult to solve mathematically. The regularization of the strong formulation of variational brittle fracture problem is inspired by the work of Ambrosio and Tororelli~\cite{ambrosio1990approximation}, which proposed a regularized formulation to approximate the Mumford-Shah~\cite{mumford1989optimal} image segmentation functional depending on jumps. The functional form of weak formulation is borrowed from~\cite{ambrosio1990approximation} (very similar form). An auxiliary variable, called as phase field parameter, is introduced to represent the jump set. The two-field functional approximation has been proved to be $\Gamma$-convergent to the one-field one for free discontinuity problems. See the details of $\Gamma$-convergence proof in~\cite{ambrosio1990approximation}. A numerical implementation of the regularized formulation is first presented by Bourdin et. al~\cite{bourdin2000numerical}.
+
+Miehe et. al~\cite{miehe2010, miehe2010phase} present a thermodynamically consistent phase field model in which the sharp crack discontinuity is overcome by a diffusive crack. The regularized diffusive crack surface functional $\Gamma$-converges to a sharp crack topology functional for vanishing length-scale parameter~\cite{braides1998approximation}. The two-field setting of the variational frame work is close to that of Bourdin et. al~\cite{bourdin2000numerical,bourdin2008variational}. One of the major contributions is the proposed energy decomposition based on operator splits, which suppresses the crack growth under compression stress state.
+
+
+
+The framework of phase field fracture by Hakim and Karma~\cite{hakim2009laws} is different in spirit from Bourdin et. al~\cite{bourdin2008variational} and Miehe et. al~\cite{miehe2010}. It is based on the classical Ginzburg-Landau type evolution equation. The evolution of the phase field parameter is governed by the dissipative dynamics. The model based on Ginzburg-Landau phase transition is particular to dynamic fracture problems.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{bib1}
+
+\end{document}

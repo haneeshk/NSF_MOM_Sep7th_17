@@ -1,0 +1,64 @@
+%
+\documentclass[10pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setallmargins{1in}
+
+\usepackage[margin=1in]{geometry}
+
+
+%\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%%\usepackage{cmbright}
+\usepackage[scaled=1]{helvet}
+
+
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+%\usepackage{tikz}
+%\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+%\usepackage[usenames]{color}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{showlabels}
+%\usepackage{labels}
+%\hypersetup{colorlinks=false}
+%\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\begin{center}\textbf{\large{Project Summary}}\end{center}
+
+\paragraph{Intellectual Merit:}
+Ceramics are lighter than metals and are able to withstand higher temperatures and corrosive environments. However, their brittleness makes them ill-suited for applications in which reliability is important. To increase their toughness and damage tolerance, ceramics are often made into composites. Recently, digital manufacturing processes, like 3D printing, have greatly expanded the diversity and complexity of the architectures used in these ceramic composites. While the composites' toughness and damage tolerance are known to be connected to their architecture, the details of this connection are not fully understood. With the ability to fabricate an even wider range of architectures, it is important to develop a better understanding of this connection in order to then determine which architectural motifs are most beneficial.
+%
+Structural biological materials (SBs), such as bone and shell, are composites predominantly composed of brittle ceramic materials, yet they are extraordinarily tough. Their architectures serve as a good starting point for determining which architectural motifs provide the greatest toughness enhancements. Our preliminary research shows that the evolution of complex crack networks and their interaction with the SB's architecture play a critical role in enhancing the SB's toughness. The PI's overarching research objective is to develop a new regularized variational fracture theory (RVFT) that will enable accurate numerical simulations of complex crack networks in SBs.
+%
+The new RVFT will provide a way to ``see'' inside a material as it fails, thereby allowing one to discover, investigate, and understand architecture-related toughening mechanisms. The new RVFT has several advantages over other commonly used computational fracture mechanics methods. Most notably, it can handle topology changes (crack branching, merging, etc.) without requiring \textit{a priori} knowledge of crack paths.
+
+\paragraph{Technical problem statement:}
+The RVFT is an alternate theory of brittle fracture  in which complex crack patterns are represented by a scalar-valued field, often called the damage field.  The value of the damage field can range from zero to unity, and denotes the loss of a material point's stiffness. Phase field-based theories are, in general, computationally expensive. However, we found that the computational cost of the RVFT is compounded dramatically by a pathology of the theory that we term ``crack broadening''. A conspicuous feature of RVFT is that the cracks have finite thickness in the reference configuration. For the results of RVFT to be physically meaningful, the thicknesses of the cracks have to be much smaller than the characteristic dimensions of the solid's geometry and of its architecture.  It is generally believed that this can be accomplished by making the value of a parameter in RVFT, called the regularization parameter, much smaller than these dimensions.  However, we found that there is an even stricter constraint on the regularization parameter. This additional constraint makes the RVFT simulations prohibitively expensive. In the current RVFT, a material point's stiffness is degraded in all directions based on the value of the damage field, without  taking into account  the fact that the stiffness does not need to be degraded in the directions parallel to the crack's surface.  This isotropic stiffness degradation is the source of the stricter requirement on the regularization parameter. We  propose to develop, and experimentally test and validate a new RVFT, in which cracks are represented using a vector-valued field that contains information about the crack orientation. The new theory will take advantage of that information to selectively---i.e., anisotropically---degrade stiffness.  Our preliminary research shows that this is a a highly promising strategy for reducing the RVFT's computational expense and making its predictions more accurate.
+
+
+\paragraph{Broader Impacts:}
+
+The PI plans to integrate the proposed research with a wide range of educational outreach activities. (i) The PI will collaborate with the SciToons initiative at Brown to create educational videos related to bio-inspired engineering that are designed to reach a broad audience. The SciToons videos use engaging storytelling to allow the general public to develop a greater understanding and appreciation of science. Through the use of jargon free language, these videos also create new opportunities for dialogue between STEM and non-STEM majors. (ii) The PI and his students will collaborate with the Spira camp at Brown, which focuses on empowering female high school students to pursue education in STEM fields. Specifically, the PI will use his research on bio-inspired materials to showcase some of the exciting new opportunities that await the next generation of engineers. The PI will expose the students to core concepts in mechanics and the design of structural materials through activities such as the ``Soft landing: better materials for tomorrow's helmets and cars'' egg drop competition and the hands on exploration of different materials' microscopic architectures. The proposed activities are designed to bolster public awareness of exciting new developments in bio-inspired engineering, and to specifically focus on motivating female high school students to pursue careers in science and engineering.
+
+\end{document}

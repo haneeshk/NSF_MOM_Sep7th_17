@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Research objective}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Research strategy}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Research hypothesis}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Preliminary research: 2D layered ceramic composites}{subsection.1.3}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Preliminary research: fracture of wavy interfaces}{subsection.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.4}{Rationale underlying our research strategy}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{Technical Background}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Technical details of RVFT}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Technical problem statement: ``crack broadening''}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Proposed research: aims and tasks}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Aim 1: Develop a new variational fracture theory and computational framework that are capable of robustly simulating crack topology changes}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Aim 1 Task 1: Develop a new RVFT that will be free of the problem of crack broadening}{subsection.3.1}% 13
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Aim 1 Task 2: Numerically implement aRVFT}{subsection.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Aim 1 Task 3: Simulate well studied linear elastic fracture mechanics problems and well known experimental fracture tests using the computational tools developed in Aim 1 Task 2.}{subsection.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Aim 2: Evaluate the predictive potential of the aRVFT through experimental comparison}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Aim 2 Task 1: Build an aRVFT computational model for the spicule}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Aim 2 Task 2: Characterize the spicules' failure behavior}{subsection.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Aim 2 Task 3: Compare the measurements to the aRVFT tool's predictions}{subsection.3.2}% 19
+\BOOKMARK [1][-]{section.4}{Broader impacts of the proposed work}{}% 20
+\BOOKMARK [1][-]{section.5}{Results from prior NSF support}{}% 21
+\BOOKMARK [1][-]{section.6}{Additional details: evaluating suitability of CZ methods and XFEM for pursuing the research objective}{}% 22
+\BOOKMARK [2][-]{subsection.6.1}{Cohesive zone methods}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.2}{Extended Finite Element methods \(XFEM\)}{section.6}% 24

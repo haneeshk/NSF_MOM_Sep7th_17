@@ -1,0 +1,105 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{plain}
+%
+%
+\fancyhead{}                    
+\fancyfoot{}                    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{unsrt}                                              %%
+
+%\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%%\usepackage{cmbright}
+\usepackage[scaled=1]{helvet}
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+%\usepackage[usenames]{color}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{showlabels}
+%\usepackage{labels}
+%\hypersetup{colorlinks=false}
+\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+
+%\setlength{\parskip}{1em}
+
+\definecolor{orange}{cmyk}{0,0.5,1,0}
+\definecolor{HKblue}{cmyk}{65,4,0,0}
+\definecolor{HKblue2}{cmyk}{100,0,0,0}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+
+% User defined commands
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\norm}[1]{\ensuremath \lVer #1 \rVert}
+\newcommand{\rhat}{\hat{\rho}}
+\newcommand{\figwidth}{2.2in}
+
+\renewcommand{\comment}[2]{{\color{#1} $\blacksquare$ \footnote{\noindent \color{#1}#2} }}
+\newcommand{\commenti}[2]{{\color{#1} $\blacksquare$  \color{#1}#2} }
+\newcommand{\commentm}[2]{{\color{#1} $\blacksquare$  \marginpar{\color{#1}#2} }}
+
+
+\usepackage[normalem]{ulem}
+
+\rfoot{Haneesh Kesari, Budget Justification \thepage/\pageref{LastPage}}
+%
+
+\begin{document}
+
+\begin{center}\textbf{\large{Budget Justification}}\end{center}
+
+\paragraph{Personnel}
+Funds totaling, on average, roughly \$86,000/year are requested to support the personnel involved in the proposed research.
+Two Ph.D. graduate students and the PI will perform the proposed research. One graduate student will design and perform the fracture and cylinder push-out tests. This graduate student will also build 3D models of the spicules based on SEM characterization of their internal architecture. The other graduate student and the PI will develop the variational fracture theory, design the aRVFT computational tool, and interpret the results from the experiments and computations. Funds to support one graduate student at 100\% effort and the other at 33\% effort via stipends, health fees, and tuition are requested as part of the Budget. Funds to support the PI for through a 1 month summer salary per year are requested as part of the Budget. A 4.5\% increase in tuition and fees is calculated each year. The complete details of the personnel expenses can be found in the Budget document.
+
+\paragraph{Educational Activities and Outreach}
+Funds totaling \$1,300/year are requested to support the educational outreach activities. Funds totaling roughly \$1000/year will be used for the development, storyboarding and animation of one Sci-Toons video. These funds will be used to pay stipends to the involved students and fees to the professional voice-over artist. 
+Funds totaling roughly \$300/year will be used for the development of the workshops and activities for the proposed collaboration with SPIRA. These funds will cover the cost of materials, and laboratory supplies for the ``Soft landing: better materials for tomorrow's helmets and cars'' competition.
+
+\paragraph{Materials and Supplies}
+Funds totaling roughly \$4,000/year are requested for preparing the spicule samples, and performing the cylinder push-out and fracture tests. Additionally, funds totaling \$2,500 are requested for a workstation that will be used to develop and test the aRVFT computational tool. Funds of \$500 are requested for both cloud and physical data storage media.
+
+Funds totaling \$800 are requested for the acquisition of the spicules, as well as the tools and chemicals needed to clean and prepare the spicules for testing. These include but are not limited to epoxy, conductive carbon glue for SEM, various solvents, and alumina polishing compound. Funds totaling roughly \$11,100 are requested for the components of the testing fixture to be used in the cylinder push-out tests. This fixture will hold a section of spicule embedded in epoxy. It will be used to both align support blocks with the innermost silica cylinder of the spicule and align a diamond indenter (\$700) with the spicule's core. This will allow the PI to directly measure the toughness of the interface between the core and the first silica cylinder. The PI expects the cost of raw materials (primarily nonmagnetic stainless steel) for this fixture to be roughly \$300. Four vacuum compatible linear piezo actuators (\$1,950/each) will be used to position the support blocks and the indenter. After alignment, the fixture will be mounted on a load cell (\$750) and the indenter will be driven into the spicule using a motorized linear actuator (\$1,600).
+
+\paragraph{Facilities and Services}
+Funds totaling \$2,100/year are requested for using the supercomputer at Brown's Center for Computation and Visualization (CCV). The virtual tests conducted on the aRVFT spicule model will be performed on the computer clusters located at the CCV. The cost to use CCV is \$750/semester. We also require Simulia software to prepare the aRVFT spicule model. The license fees to use the Simulia software are \$300/semester. The total cost of CCV and software usage is \$6,300 over 3 years. 
+
+Funds totaling \$2,400 are requested for machining services associated with the construction of the experimental testing stages and fixtures. A combination of electrical discharge machining and conventional machining (\$2,200) will be used to fabricate the parts of the cylinder push-out testing fixture. The JEPIS machine shop at Brown provides these services at a rate of \$55/hour. The PI expects the construction of the fixture to take at least 40 hours. Additionally, the sample holder for the fracture testing stage will be redesigned (\$200) to reduce the time needed to cut notches in the spicules. 
+
+Funds totaling roughly \$1,800/year are requested for scanning electron microscope usage fees as part of the proposed experiments. The PI anticipates needing roughly 30 hours at a rate of \$60/hour for aligning the cylinder push-out fixture for 60 spicule specimens. The FIB notching procedure for the fracture experiments requires 45 minutes per spicule for 60 spicules at a rate of \$60/hour. To compare the fracture surface to the crack path predicted by the aRVFT tool, the broken spicules must be imaged again after testing. The PI anticipates this will take 15 minutes per spicule at a rate of \$52/hour.
+
+\paragraph{Publication Costs}
+Funds totaling \$1,200 are requested for manuscript preparation and publication costs.
+
+\paragraph{Indirect Costs}
+Indirect costs are calculated on MTDC at the rate of 62.5\% per Brown's negotiated rate.
+
+\end{document}

@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ProjectDescription.aux
+The style file: unsrt.bst
+Database file #1: nsfCareer.bib
+Repeated entry---line 3200 of file nsfCareer.bib
+ : @article{miehe2010phase
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in cook1964mechanism
+Warning--empty journal in abaqus2014
+You've used 111 entries,
+            1791 wiz_defined-function locations,
+            1105 strings with 22770 characters,
+and the built_in function-call counts, 27997 in all, are:
+= -- 2606
+> -- 1244
+< -- 9
++ -- 458
+- -- 347
+* -- 2278
+:= -- 4458
+add.period$ -- 339
+call.type$ -- 111
+change.case$ -- 108
+chr.to.int$ -- 0
+cite$ -- 113
+duplicate$ -- 1033
+empty$ -- 2642
+format.name$ -- 347
+if$ -- 6009
+int.to.chr$ -- 0
+int.to.str$ -- 111
+missing$ -- 110
+newline$ -- 562
+num.names$ -- 113
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 407
+stack$ -- 0
+substring$ -- 2613
+swap$ -- 152
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 317
+width$ -- 114
+write$ -- 1226
+(There was 1 error message)

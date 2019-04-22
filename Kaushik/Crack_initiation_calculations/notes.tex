@@ -1,0 +1,168 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{fancyhdr,lastpage}
+
+\renewcommand{\headrulewidth}{0.4pt}\renewcommand{\footrulewidth}{0.4pt}
+\lhead{Hi}\rhead{Bye}
+\makeatletter
+\newcommand{\resetHeadWidth}{\fancy@setoffs}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhead{}                    
+\fancyfoot{}                    
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+ 
+\cfoot{\thepage}
+
+\usepackage[paperwidth=9.5in, 
+left=1in,
+right=2in,
+top=1in,
+bottom=1in,
+paperheight=11in, 
+%margin=1in, 
+footskip=.75in]{geometry}
+\resetHeadWidth
+
+\setcounter{tocdepth}{-1}
+\renewcommand{\contentsname}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   
+\newcommand{\required}[1]{\part*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{}                   %%
+\bibliographystyle{unsrt}                                              %%
+
+
+\usepackage{mathptmx}
+\usepackage{floatflt}
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+%\usepackage{tikz}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+%\usepackage{mathtools}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{showlabels}
+%\usepackage{labels}
+%\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+%\usepackage{epigraph}
+%\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{dashrule}
+\usepackage{pdfpages}
+
+\setlength{\bibsep}{0.0pt}
+
+% User defined commands
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\norm}[1]{\ensuremath \lVer #1 \rVert}
+\newcommand{\rhat}{\hat{\rho}}
+\newcommand{\figwidth}{2.2in}
+\newcommand{\tl}{\tilde}
+
+
+%Numbered environment
+\newcounter{commenthk}[section]
+\newenvironment{commenthk}[1][]{\refstepcounter{commenthk}\par\medskip
+   \noindent \textbf{\thecommenthk. #1} \rmfamily}{\medskip}
+
+
+\setlength\marginparwidth{1.5in}
+\renewcommand{\comment}[2]{{\color{#1} $\blacksquare$ \footnote{\noindent \color{#1}#2} }}
+\newcommand{\commenti}[2]{{\color{#1} $\blacksquare$  \color{#1}#2} }
+\newcommand{\commentm}[2]{{ \color{#1} \marginpar{\color{#1} 
+\scriptsize 
+\begin{commenthk}
+#2
+\end{commenthk}
+}
+$^\thecommenthk$
+ }}
+
+
+\titleformat{\section}
+  {\normalfont \large \scshape }{\thesection}{1em}{}
+
+
+
+\titleformat{\subsection}
+  {\normalfont \normalsize  \scshape \bfseries}{\thesubsection}{1em}{}
+
+
+\titleformat{\subsubsection}
+  {\normalfont \normalsize \scshape \bfseries}{\thesubsubsection}{1em}{}
+
+
+%\titleformat{\paragraph}
+%  {\normalfont  \scshape}{\theparagraph}{}{}
+
+
+
+\usepackage{enumitem}
+\setlistdepth{9}
+
+\newlist{myEnumerate}{enumerate}{9}
+\setlist[myEnumerate,1]{label=(\arabic*)}
+\setlist[myEnumerate,2]{label=(\Roman*)}
+\setlist[myEnumerate,3]{label=(\Alph*)}
+\setlist[myEnumerate,4]{label=(\roman*)}
+\setlist[myEnumerate,5]{label=(\alph*)}
+\setlist[myEnumerate,6]{label=(\arabic*)}
+\setlist[myEnumerate,7]{label=(\Roman*)}
+\setlist[myEnumerate,8]{label=(\Alph*)}
+\setlist[myEnumerate,9]{label=(\roman*)}
+
+
+\let\Pi\varPi
+
+
+\begin{document}
+The finite element implementation of regularized variational fracture model is benchmarked for a single edge notch tension geometry subjected to far-field loading $\sigma^{\infty}$ as shown in figure.~\ref{fig1}(A). For a prescribed value of energy release rate $G_c$, the critical stress $\sigma_{cr}^{\infty}$ at which crack initiates is given by,
+\begin{align*}
+\sigma_{cr}^{\infty} = \sqrt{\frac{E^* G_c}{2 b \tan{\left(\frac{\pi a}{2 b} \right)} }} C\left(\frac{a}{b}\right)^{-1},
+\end{align*} 
+where $E^*$ is the plane strain Youngs modulus, $a$ is the length of the notch, $b$ is the width of the geometry and $C\left(\frac{a}{b}\right)$ is the compliance. The above equation is non-dimensionalized by introducing non-dimensional variables $\Pi_\mathit{1}= G_c/E^* b$ and $\Pi_\mathit{2} = a/b$ given as,
+\begin{align}\label{sig_cr}
+\frac{\sigma_{cr}^{\infty}}{E^*} = \sqrt{\frac{\Pi_\mathit{1}}{2  \tan{\left(\frac{\pi \Pi_\mathit{2}}{2} \right)} }} C\left(\Pi_\mathit{2}\right)^{-1}.
+\end{align}
+
+Numerical calculations are performed for the geometry shown in figure.~\ref{fig1}(A) by developing a finite element mesh with a mesh size of $h = 0.01$ close to the notch tip. Crack initiation is characterized when the value of the damage parameter $\phi$ reaches $0.99$ at the first node in front of the notch tip. The numerical results for $\sigma_{cr}^{\infty}/E^*$ is plotted against $\Pi_\mathit{2}$ for different values of $\Pi_\mathit{1}$ and are compared with the analytical solution given in eq.~\ref{sig_cr}. The solid lines correspond to the analytical solution and markers to the numerically obtained data. In figure.~\ref{fig1}(B) $\sigma_{cr}^{\infty}/E^*$ (left hand side of eq.~\ref{sig_cr}) is plotted against $\left(\Pi_\mathit{1}/2 \tan{\left(\pi \Pi_\mathit{2}/2 \right)}\right)^{1/2} C \left(\Pi_\mathit{2} \right)^{-1}$ (right hand side of eq.~\ref{sig_cr}) and the identical numerical data from figure.~\ref{fig1}(A) are compared against the reference line of slope 1. The results in both the plots compare accurately within an error of $5\%$. From these figures we can conclude that the implementation is correct and accurate to numerical precision.
+
+
+\begin{figure}[b!]
+	%\begin{minipage}{0.8\textwidth}
+	%\begin{flushright}
+	\center
+	\includegraphics[width=1.0\textwidth]{./Figures/combined_plot.pdf}
+	%\end{flushright}
+	%\end{minipage}
+	%\begin{minipage}{0.2\textwidth}
+	%\begin{flushleft}
+	\vspace{-8pt}
+	\caption{
+		{\footnotesize (A)In this figure the results of crack initiation for a single edge notch geometry of notch length $a$ and width $b$, subjected to far-field stress $\sigma^\infty$ is shown. The crack is assumed to have initiated when the value of $\phi$ at the first node in front of the notch tip reaches $0.99$ and the far-field stress at that instant is $\sigma_{cr}^{\infty}$. The non-dimensionalized stress ($\sigma_{cr}^{\infty}/E^*$) is plotted against $\Pi_\mathit{2}$. The solid lines correspond to the analytical solution given in eq.~\ref{sig_cr} and markers to the numerical data points obtained for various values of $\Pi_\mathit{1}$ and $\Pi_\mathit{2}$. (B) Identical data points from fig.~\ref{fig1}(A) are now plotted against the right hand side of the analytical formula given in eq.~\ref{fig1} and the deviation from the reference line is less than $5\%$. 
+		}
+		\label{fig1}
+	}
+	
+	%\end{flushleft}
+	%\end{minipage}
+	\vspace{-10pt}
+\end{figure}
+\end{document}

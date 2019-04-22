@@ -1,0 +1,118 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{plain}
+%
+%
+\fancyhead{}                    
+\fancyfoot{}                    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{unsrt}                                              %%
+
+%\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%%\usepackage{cmbright}
+\usepackage[scaled=1]{helvet}
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+%\usepackage[usenames]{color}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{showlabels}
+%\usepackage{labels}
+%\hypersetup{colorlinks=false}
+\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+
+%\setlength{\parskip}{1em}
+
+\definecolor{orange}{cmyk}{0,0.5,1,0}
+\definecolor{HKblue}{cmyk}{65,4,0,0}
+\definecolor{HKblue2}{cmyk}{100,0,0,0}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+
+% User defined commands
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\norm}[1]{\ensuremath \lVer #1 \rVert}
+\newcommand{\rhat}{\hat{\rho}}
+\newcommand{\figwidth}{2.2in}
+
+\renewcommand{\comment}[2]{{\color{#1} $\blacksquare$ \footnote{\noindent \color{#1}#2} }}
+\newcommand{\commenti}[2]{{\color{#1} $\blacksquare$  \color{#1}#2} }
+\newcommand{\commentm}[2]{{\color{#1} $\blacksquare$  \marginpar{\color{#1}#2} }}
+
+
+\usepackage[normalem]{ulem}
+
+
+\rfoot{Haneesh Kesari, Facilities \thepage/\pageref{LastPage}}
+
+\begin{document}
+
+\begin{center}\textbf{\large{Facilities, Equipment, and Other Resources}}\end{center}
+
+\paragraph{Laboratory space and related resources}
+The PI directs an over 800 square foot laboratory in the School of Engineering at Brown. The laboratory is well stocked with  tools and equipment needed for cleaning and preparing the spicule samples for the proposed fracture and cylinder push-out experiments.
+
+Specifically, there are two laboratory benches, a polarized light microscope and a de-ionized water supply that will be used for inspecting and cleaning the spicules. The laboratory is also equipped a chemical fume hood, a fume extraction arm, a vacuum chamber, and a convection oven that are necessary for embedding the spicules in epoxy for the cylinder push-out experiment.
+%
+The vibration isolation table and custom-built mechanical testing stage with which the PI will conduct the fracture tests are located in this laboratory as well.
+%
+Other laboratory facilities include six student desks, a conference table, and two white boards.
+
+\paragraph{Computational resources}
+The laboratory and the PI's office house five computer workstations with a total of 64 CPU cores (one 4-core, three 8-core and one 36-core workstation(s)). The 36-core (Intel Xeon E5-2699 2.3 GHz) workstation has 128 Gb RAM, and a NVIDIA Quadro K5200 GPU and is used to perform most of the large-scale computational mechanics calculations in the lab. At least one of these workstations will be dedicated to the proposed project for the development and testing of the aRVFT tool.
+
+\textit{High Performance Computing:}
+Brown hosts the Center for Computation \& Visualization (CCV). The center offers a number of computational resources to Brown researchers for undertaking complex numerical simulation, modeling,  visualization, and data analysis.
+The high performance computing cluster (HPC) in the center  consists of over 500 terabytes of disk capacity, 570 nodes comprising 7,632 CPU cores (and 334,336 GPU cores) with a peak performance of over 125 TFLOPs (and 540 TFLOPS from GPUs). A large collection of software is available on CCV systems. The CCV staff will also help us acquire and install most applications upon request.
+%
+The spicule fracture simulations will be performed on the HPC cluster at the CCV at Brown. Funds to use the CCV are requested as part of the budget.   
+
+\textit{Software: }
+Brown freely provides licenses to many of the software products that will be needed in the proposed research.
+%
+For example, it provides free licenses for  MATLAB, Mathematica, Adobe Illustrator, SolidWorks Education Edition, and the student version of Abaqus. These softwares will be used for post-processing data from the fracture and cylinder push-out experiments and for building the 3D spicule model.
+%
+Brown provides the license to the research version of Abaqus for a fee. The research version of Abaqus will be needed for developing the aRVFT tool and performing the virtual fracture tests on the 3D spicule models. Funds are requested as part of the budget to acquire the license for the research version of Abaqus.
+
+\paragraph{Additional Facilities at Brown's School of Engineering}
+Brown's School of Engineering has a well-equipped and fully staffed mechanical engineering workshop that provides conventional, CNC, and electrical discharge machining services. These services are essential for fabricating the cylinder push-out fixture. Funds for machining services are requested as part of the budget.
+
+The PI also has access to the electron microscopy and NanoTools facilities at Brown's Institute for Molecular and Nanoscale Innovation. The electron microscopy facility has three scanning electron microscopes, one of which also has focused ion beam milling capabilities. These will be used for aligning the cylinder push-out fixture, imaging the spicules' internal architecture, and cutting notches in the spicules for the fracture tests. Funds for electron microscope facility usage fees are requested as part of the budget.
+
+Through a collaboration with Professor Pradeep Guduru, the PI has been granted access to a Hysitron TriboIndenter that will be used to measure the elastic properties and fracture toughness of the spicules' silica. Please see the attached letter of collaboration from Professor Pradeep Guduru.
+
+\end{document}
+
+
+
+
+
+
+
+

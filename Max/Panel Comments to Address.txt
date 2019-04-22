@@ -1,0 +1,7 @@
+novelty seems limited
+broadening/shortcoming of RVFT explained too late
+too many acronyms, hard to keep track
+figures too compact
+suggested use of fitting parameters to match exp data is concerning (this has been removed)
+remove focus from interfacial models
+why not CZ or XFEM?

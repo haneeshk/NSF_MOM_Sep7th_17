@@ -1,0 +1,41 @@
+Wavy interfaces are a prominent architectural motif in \textit{id}-SBs, such as woodpecker beaks and the cranial bones of rams (see Figure XXX), that are subjected to impact or cyclic loads but must remain intact to perform their mechanical functions. 
+
+Based on his previous studies of adhesion between wavy surfaces, the PI believes that the wavy interfaces could be a key ingredient for enhancing the toughness of these materials.
+%
+The PI has previously studied the hysteretic load-displacement response that results from adhesive contact between two wavy surfaces (see Figure XXX).
+%
+He found that this hysteresis can be attributed to a series of surface instabilities (marked with dashed magenta lines in Figure XXX), in which the contact area grows or recedes by a finite amount.
+%
+Interestingly, the amount of energy lost through this hysteresis is controlled by the amplitude and wavelength of the rough surface.
+%
+Therefore, even though the interface's intrinsic adhesion energy is constant, the interface's waviness can increase the measured --- i.e., the effective --- adhesion energy.
+%
+Motivated by this discovery and the similarities between the mechanics of contact and fracture, the PI proposes to use the PFT tool to search for new toughening mechanisms in materials with wavy, weak interfaces. 
+%
+One of the primary differences between these two problems is that in the case of wavy interfaces, a crack's path is not confined to interface as it is in the adhesion problem. 
+%
+Rather, in some cases the crack will travel along the interface while in others it will propagate through the bulk (see Figure XXX). 
+%
+The PFT tool is ideally suited to handle this additional level of complexity.
+
+The PI has performed a preliminary study of crack propagation in materials with wavy interfaces using the PFT tool (see Figure XXX).
+%
+In these simulations we allowed $g_c$ to vary spatially, so that in most of the solid it had a high value, $g_{c\infty}$, and at a predefined wavy interface of finite thickness, it had a low value, $g_{cI}$.
+%
+In our preliminary simulations depending on the parameters $A/\lambda$ and $g_{cI}/g_{c\infty}$ the failure of the interface displayed very rich mechanics.
+%
+Here, $A$ and $\lambda$ are the amplitude and the wavelength of the WI, respectively.
+%
+For example, we found that at small $A/\lambda$ the crack always propagated  along the interface (see Figure XXX). However, at larger $A/\lambda$  the crack repeatedly ventured out of the interface into the bulk and then back into the interface through a series of energy dissipating instabilities (see Figure XXX). 
+%
+This lead to substantial toughening in the load-displacement response (see Figure XXX).
+
+While these results suggests that there may be new toughening mechanisms operating in materials with wavy interfaces, it is not yet understood how toughness varies with waviness.
+%
+Further investigation of the relationship between toughness and waviness is motivated by theoretical models (REF ortiz) that suggest that toughness can be enhanced by increasing the complexity of the interface's undulations. 
+%
+We will achieve Sro.iii by carrying out the following two major tasks. 
+%
+{\bf{Task.1}}) Perform a parametric study to identify the relationship between effective toughness and the parameters $A/\lambda$, $g_{cI}/g_{c\infty}$, and $E\lambda/g_{c\infty}$. 
+%
+{\bf{Task.2}}) Using the output of {\bf{Task.1}}, construct a simple theoretical mechanics model that captures the key toughening mechanisms operating in materials with wavy interfaces. This model should be able to reproduce the mechanical responses obtained during the parametric study.

@@ -1,0 +1,37 @@
+\documentclass[11pt] {article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[scaled=2.5]{helvet}
+\setlength{\parsep}{20pt}
+\usepackage{geometry}
+\geometry{letterpaper}            
+\usepackage{graphicx}					
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\newcommand{\bs}[1] {\boldsymbol{#1}}
+
+\begin{document}
+\title{Overview of computational fracture methods}
+\author{V.Kaushik}
+%\date{January 12, 2015}
+\maketitle
+%\section{Traditional computational fracture methods}
+Computational modeling of crack initiation and propagation continues to be an active area of research in the fracture mechanics community. Over the past years several techniques have been developed to model crack growth in materials, of which cohesive zone method (CZM) \cite{xu_1994,camacho_1996} and extended finite element method (XFEM) \cite{dolbow_1999} have been widely used to predict crack paths. In CZM, the region close to the crack tip is subjected to a traction-separation law and the crack propagates when the crack tip opening displacement (CTOD) reaches a prescribed critical value. This method is usually implemented in a finite element framework and crack trajectory depends critically on the size of elements in regions of crack propagation. Further, traction-separation law needs to be prescribed in regions where crack growth is anticipated, thus, making it necessary to have a priori knowledge of the crack path. In XFEM, to model the displacement discontinuity introduced during crack propagation discontinuous enriched elements are used. Introduction of these enriched elements can considerably increase the condition number of the linear system of equations being solved, thus, making the system of linear equations ill-conditioned which leads to serious convergence problems (see \cite{lasry_2010}). Hence, it is often necessary to come up with strategies to prevent ill-conditioning while using XFEM (see \cite{zhao_2014,xiao_2007l}). Modeling complex crack patterns such as crack branching with high accuracy is not feasible with these methods (see \cite{song_2008}). 
+\par
+%\section{Phase field method}
+One of recent developments in computational fracture mechanics has been the emergence of phase field methods to predict crack paths in elastic materials. This method was introduced by Francfort and Marigo (see \cite{francfort_1998}) and its numerical implementation was addressed by Bourdin et al. (see \cite{bourdin_2000}). In this method, the total energy ($E_t$) is considered as the sum of bulk ($E_b$) and surface ($E_s$) energies given as,
+\begin{align}\label{PFM}
+&E_{t} = E_{b} + E_s, \\
+&\text{ where } 
+E_b = \int_{\Omega}g(\phi) \psi\left(\bs u,\bs \nabla \bs u\right) d\Omega
+\text{ and } 
+E_s = \int_{\Omega} G_b \left(\ell_0\| \bs \nabla \phi \|^2 +\frac{\phi^2}{\ell_0}\right) d\Omega.
+\end{align}
+The symbol $\bs{u}$ is the displacement field, $\psi\left(\bs u,\bs \nabla \bs u\right)$ is the elastic strain energy, $G_b$ is the bulk fracture toughness, $\phi$ is a scalar damage variable, $g(\phi)$ is a degradation function ,$\ell_0$ is the length scale parameter of the model and $\|\cdot\|$ is the Euclidean-2 norm. The damage variable $\phi$ introduces fracture into the model and it is bounded between 0 and 1. The solid is unbroken when $\phi = 0$ and is completely broken when $\phi = 1$. It has been demonstrated that this model has the capability to produce complex crack patterns such as crack branching with high accuracy in a straightforward manner (see \cite{borden_2012}). It has also been shown to produce accurate crack paths for classical fracture mechanics problems such as mode-II failure (see \cite{miehe_2010}). The length scale parameter $\ell_0$ eliminates the dependence of crack path on element size (see \cite{miehe_2010,borden_2012}). Crack initiation in this model follows the Griffith criterion and the propagation direction is a consequence of minimization of total energy $E_t$. 
+\bibliographystyle{plain}
+\bibliography{PFM}
+
+\end{document}

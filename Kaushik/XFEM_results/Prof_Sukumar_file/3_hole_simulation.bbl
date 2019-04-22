@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{bittencourt1996quasi}
+TN~Bittencourt, PA~Wawrzynek, AR~Ingraffea, and JL~Sousa.
+\newblock Quasi-automatic simulation of crack propagation for 2d lefm problems.
+\newblock {\em Engineering Fracture Mechanics}, 55(2):321--334, 1996.
+
+\bibitem{miehe2010phase}
+Christian Miehe, Martina Hofacker, and Fabian Welschinger.
+\newblock A phase field model for rate-independent crack propagation: Robust
+  algorithmic implementation based on operator splits.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  199(45):2765--2778, 2010.
+
+\end{thebibliography}

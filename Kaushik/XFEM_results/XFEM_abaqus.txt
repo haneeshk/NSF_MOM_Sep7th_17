@@ -1,0 +1,12 @@
+Abaqus
+
+Damage initiation - If a critical value of max stress or strain is reached then damage ($d$) initiates. 
+The damage variable $d = 0$ indicates the material is intact and $d=1$ means complete failure.
+Damage evolution - After damage initiation, this dictates how damage evolves. For instance, in the linear case
+d goes to from 0 to 1 as the displacement in the failed element reaches $u_f$.
+
+\begin{align}
+\dot{d} = \frac{\dot{u}}{u_f}.
+\end{align}
+
+Fracture Criterion: This sets the direction in which crack propagates. Maximum tangential stress criterion is the default criterion when using LEFM based XFEM method.

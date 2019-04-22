@@ -1,0 +1,194 @@
+\begin{thebibliography}{10}
+
+\bibitem{barkai2012crack}
+O~Barkai, T~Menouillard, J-H Song, T~Belytschko, and D~Sherman.
+\newblock Crack initiation and path selection in brittle specimens: A novel
+  experimental method and computations.
+\newblock {\em Engineering Fracture Mechanics}, 89:65--74, 2012.
+
+\bibitem{belytschko1999elastic}
+Ted Belytschko and Tom Black.
+\newblock Elastic crack growth in finite elements with minimal remeshing.
+\newblock {\em International journal for numerical methods in engineering},
+  45(5):601--620, 1999.
+
+\bibitem{belytschko2003dynamic}
+Ted Belytschko, Hao Chen, Jingxiao Xu, and Goangseup Zi.
+\newblock Dynamic crack propagation based on loss of hyperbolicity and a new
+  discontinuous enrichment.
+\newblock {\em International journal for numerical methods in engineering},
+  58(12):1873--1905, 2003.
+
+\bibitem{belytschko2013nonlinear}
+Ted Belytschko, Wing~Kam Liu, Brian Moran, and Khalil Elkhodary.
+\newblock {\em Nonlinear finite elements for continua and structures}.
+\newblock John wiley \& sons, 2013.
+
+\bibitem{belytschko2001arbitrary}
+Ted Belytschko, Nicolas Mo{\"e}s, Shuji Usui, and Chandu Parimi.
+\newblock Arbitrary discontinuities in finite elements.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  50(4):993--1013, 2001.
+
+\bibitem{bordas2007extended}
+St{\'e}phane Bordas, Phu~Vinh Nguyen, Cyrille Dunant, Amor Guidoum, and Hung
+  Nguyen-Dang.
+\newblock An extended finite element library.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  71(6):703--732, 2007.
+
+\bibitem{abaqus2014}
+Dassault Syst{\`e}mes~Simulia Corp.
+\newblock Simulia (2014) abaqus analysis user’s guide 6th edn.
+\newblock 2014.
+
+\bibitem{daux2000arbitrary}
+Christophe Daux, Nicolas Mo{\"e}s, John Dolbow, Natarajan Sukumar, and Ted
+  Belytschko.
+\newblock Arbitrary branched and intersecting cracks with the extended finite
+  element method.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  48(12):1741--1760, 2000.
+
+\bibitem{dolbow1999finite}
+John Dolbow and Ted Belytschko.
+\newblock A finite element method for crack growth without remeshing.
+\newblock {\em International journal for numerical methods in engineering},
+  46(1):131--150, 1999.
+
+\bibitem{england1965crack}
+AH~England.
+\newblock A crack between dissimilar media.
+\newblock {\em J. appl. Mech}, 32(2):400--402, 1965.
+
+\bibitem{fries2008corrected}
+Thomas-Peter Fries.
+\newblock A corrected xfem approximation without problems in blending elements.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  75(5):503--532, 2008.
+
+\bibitem{fries2010extended}
+Thomas-Peter Fries and Ted Belytschko.
+\newblock The extended/generalized finite element method: an overview of the
+  method and its applications.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  84(3):253--304, 2010.
+
+\bibitem{golewski2012numerical}
+GL~Golewski, P~Golewski, and T~Sadowski.
+\newblock Numerical modelling crack propagation under mode ii fracture in plain
+  concretes containing siliceous fly-ash additive using xfem method.
+\newblock {\em Computational Materials Science}, 62:75--78, 2012.
+
+\bibitem{gravouil2002non}
+Anthony Gravouil, Nicolas Mo{\"e}s, and Ted Belytschko.
+\newblock Non-planar 3d crack growth by the extended finite element and level
+  sets—part ii: Level set update.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  53(11):2569--2586, 2002.
+
+\bibitem{grutzik2017development}
+Scott~Joseph Grutzik and Earl~David Reedy.
+\newblock Development of glass/steel bibeam specimen for study of brittle crack
+  path stability.
+\newblock In {\em Experimental and Applied Mechanics, Volume 4}, pages 59--66.
+  Springer, 2017.
+
+\bibitem{iarve2003mesh}
+EV~Iarve.
+\newblock Mesh independent modelling of cracks by using higher order shape
+  functions.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  56(6):869--882, 2003.
+
+\bibitem{FRANC3D}
+Fracture Analysis~Consultants Inc.
+\newblock Franc3d reference manual.
+\newblock 2016.
+
+\bibitem{Sierra}
+Sandia~National Laboratories.
+\newblock Sierra/solidmechanics user’s guide 4th edn.
+\newblock 2015.
+
+\bibitem{liu2004xfem}
+X~Y Liu, Q~Z Xiao, and Bhushan~Lal Karihaloo.
+\newblock Xfem for direct evaluation of mixed mode sifs in homogeneous and
+  bi-materials.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  59(8):1103--1118, 2004.
+
+\bibitem{melenk1996partition}
+Jens~M Melenk and Ivo Babu{\v{s}}ka.
+\newblock The partition of unity finite element method: basic theory and
+  applications.
+\newblock {\em Computer methods in applied mechanics and engineering},
+  139(1-4):289--314, 1996.
+
+\bibitem{moes2002non}
+Nicolas Mo{\"e}s, Anthony Gravouil, and Ted Belytschko.
+\newblock Non-planar 3d crack growth by the extended finite element and level
+  sets—part i: Mechanical model.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  53(11):2549--2568, 2002.
+
+\bibitem{peng2017extended}
+Xuan Peng, Sivakumar Kulasegaram, SC~Wu, and SPA Bordas.
+\newblock An extended finite element method (xfem) for linear elastic fracture
+  with smooth nodal stress.
+\newblock {\em Computers \& Structures}, 179:48--63, 2017.
+
+\bibitem{song2006method}
+Jeong-Hoon Song, Pedro Areias, and Ted Belytschko.
+\newblock A method for dynamic crack and shear band propagation with phantom
+  nodes.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  67(6):868--893, 2006.
+
+\bibitem{stolarska2001modelling}
+M~Stolarska, DL~Chopp, Nicolas Mo{\"e}s, and Ted Belytschko.
+\newblock Modelling crack growth by level sets in the extended finite element
+  method.
+\newblock {\em International journal for numerical methods in Engineering},
+  51(8):943--960, 2001.
+
+\bibitem{strouboulis2000generalized}
+T~Strouboulis, K~Copps, and I~Babuska.
+\newblock The generalized finite element method: an example of its
+  implementation and illustration of its performance.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  47(8):1401--1417, 2000.
+
+\bibitem{strouboulis2000design}
+Theofanis Strouboulis, Ivo Babu{\v{s}}ka, and Kevin Copps.
+\newblock The design and analysis of the generalized finite element method.
+\newblock {\em Computer methods in applied mechanics and engineering},
+  181(1):43--69, 2000.
+
+\bibitem{sukumar2000extended}
+Natarajan Sukumar, Nicolas Mo{\"e}s, B~Moran, and Ted Belytschko.
+\newblock Extended finite element method for three-dimensional crack modelling.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  48(11):1549--1570, 2000.
+
+\bibitem{ventura2006elimination}
+Giulio Ventura.
+\newblock On the elimination of quadrature subcells for discontinuous functions
+  in the extended finite-element method.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  66(5):761--795, 2006.
+
+\bibitem{xiao2006improving}
+Qi-Zhi Xiao and Bhushan~Lal Karihaloo.
+\newblock Improving the accuracy of xfem crack tip fields using higher order
+  quadrature and statically admissible stress recovery.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  66(9):1378--1410, 2006.
+
+\bibitem{xu2014modeling}
+Dandan Xu, Zhanli Liu, Xiaoming Liu, Qinglei Zeng, and Zhuo Zhuang.
+\newblock Modeling of dynamic crack branching by enhanced extended finite
+  element method.
+\newblock {\em Computational Mechanics}, 54(2):489--502, 2014.
+
+\end{thebibliography}

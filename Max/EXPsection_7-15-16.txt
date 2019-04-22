@@ -1,0 +1,156 @@
+\subsection{Evaluate the predictive potential of the newly developed PFT computational tools through experimental comparison}
+
+\subsubsection{Key Research Problems of Sro.II}
+
+\paragraph{Identifying the key architectural features in id-materials}
+\label{sec:Id-key}
+
+A number of simple, analytically tractable, mechanics models have been developed to explain the origin of toughness in \textit{id}-SBs~\cite{currey1976further, jackson1988mechanical, kamat2000structural, barthelat2007experimental}.
+%
+However, we believe that it is unlikely that these simple mechanics models alone can capture the key toughening mechanisms in \textit{id}-SBs.
+%
+This is because in order to remain analytically tractable, these models can only contain a limited number of architectural features. On the other hand, the SBs' architectures often contain dozens of features, and it is seldom clear which features are important and should therefore be included in a model.
+%
+By focusing on different subsets of a SB's architectural features one can come up with a number of different simple models.
+%
+Comparing the models with experiments and making self consistency checks can help to reduce the number of plausible models. However, there are often a considerable number of equally plausible models that remain even after these checks. 
+%
+For example, there are over five different simple models that have been put forward to explain the origin of toughness in nacre~\cite{barthelat2007mechanics,smith1999molecular,meyers2008mechanical,li2004nanoscale,lin2006mechanical,chen2013bio}. These models highlight different features of nacre's architecture and suggest different mechanisms to explain nacre's extraordinary toughness.
+%
+However, there is no clear consensus on which, if any, of these models accurately describe the actual toughening mechanisms operating in nacre. 
+%
+We believe that the lack of a clear understanding of the roles of the different architectural features is partially responsible for the current emphasis on replicating as many architectural features as possible in bio-inspired materials.
+%
+Since the different architectural features span a wide range of length scales, it is extremely challenging and expensive to replicate them in synthetic materials.
+%
+This effort and expense would be justified if it could be proven that a large number of architectural features spanning different length scales are indeed critical for enhancing the material's performance. 
+%
+However, in lieu of this lack of understanding, some current replication efforts may in fact be hurting science by moving the focus away from efforts to understand the fundamental mechanisms that underlie the origin of toughness in \textit{id}-SBs.
+%
+Understanding these mechanisms is a critical prerequisite to attempting to reproduce the exceptional toughness of \textit{id}-SBs using synthetic analogues.
+%
+
+One of the primary goals of developing PFT tools is to address the hurdles and issues mentioned in the previous paragraph.
+%
+With their ability to simulate the mechanical failure behavior of different computational models of \textit{id}-SBs, the PFT tools will help to identify the architectural features that are most important for enhancing the material's toughness. In the future, we envision the PFT tools being used as follows.
+%
+Consider an \textit{id}-SB that displays exceptional toughness in a fracture test.
+%
+We would begin by building a family of CAD models for the SB by incorporating different subsets of its architectural features.
+%
+We would then perform virtual mechanical tests on those CAD models using the PFT tools.
+%
+Small-scale material parameters, such as interface toughness and strength, that are difficult to measure experimentally will be used as fitting parameters in the PFT computations to get their predictions to match the measurements as closely as possible.
+%
+These predictions will be used to identify the smallest subset of architectural features that are responsible for the majority of the SB's toughness.
+%
+A simple mechanics model will then be built by incorporating only the identified subset of architectural features.
+%
+The virtual tests involving the smallest subset of architectural features will be further analyzed to identify the key mechanisms responsible for the SB's toughness. 
+%
+That knowledge will be used to  guide the development of the simple model.
+
+\subsubsection{Research Tasks}
+
+It is important that the PFT tools are able to correctly capture the salient characteristics of an \textit{id}-material's failure behavior. Therefore, we will evaluate the predictive capability of the developed PFT tools by comparing their results with measurements from fracture tests conducted on a model \textit{id}-SB.
+
+We will use the skeletal elements of the marine sponge \textit{Euplectella aspergillum} (EA), called basalia spicules, as the model \textit{id}-SB in our evaluation.
+%
+The EA spicules are hair-like fibers that are roughly 10 cm long and 50 $\mu$m in diameter and are composed primarily of biogenic silica.
+%
+They have a cylindrical onion ring architecture (see the inset in Figure~\ref{fig:spicule} (b)).
+%
+The PI has considerable experience studying structure-property connections in EA spicules~\cite{monn2015new}.
+%
+However, the primary reason for selecting EA spicules over shell or bone is that their architecture has a good balance between mathematical regularity and complexity.
+%
+The EA spicules, owing to their axisymmetry, can be described using less than 30 parameters.
+%
+This will allow us to build the required EA spicule CAD models and complete our evaluation within the allocated time period of the project.
+%
+At the same time, the spicule's architecture has all of the key features of \textit{id}-materials (brittle layers, weak interfaces, 3D architecture). Our preliminary mechanical tests show that the EA spicules' failure response is considerably different from that of spicules from a related species that lack the onion ring architecture (see the inset in Figure~\ref{fig:spicule} (b)).
+%
+This implies that there are interesting toughening mechanisms operating in EA spicules created by their architecture.
+%
+
+The planned comparison will consist of three major tasks: {\bf{Task.1}}) \textit{Build a PFT computational model for the spicule}, {\bf{Task.2}}) \textit{Characterize the spicules' failure behavior}, {\bf{Task.3}}) \textit{Compare the measurements to the PFT tool's predictions}. 
+
+\paragraph{Task.1} To build a PFT computational model of the spicule we need the following information: spicule architectural parameters;
+%
+elastic and fracture toughness properties of the spicule's silica;
+%
+and fracture toughness of the spicule's weak interfaces.
+%
+This data will be collected by performing the following sub-tasks. 
+
+\begin{enumerate}[
+label*= {\sc{Task}}.1.\roman*.,align=left,
+%leftmargin=-2cm
+]
+
+\item \textit{Architecture measurements}
+The PI has used SEM imaging to measure the silica layer thicknesses in the EA spicules as reported in ~\cite{monn2015new}. Those results show that the spicules' internal architecture is highly consistent across different spicules, even across spicules from different EA individuals. We will measure the spicule radius, core radius, and silica cylinder thicknesses in all spicules that we test in Task.2. 
+
+\item \textit{Measure fracture toughness and elastic modulus of the spicule's biogenic silica.}
+Although the EA spicules are predominantly composed of silica, it has been shown that many spicules from other sponge species  possess a proteinaceous scaffold within their silica~\cite{wang2010morphology, weaver2003nanostructural}. 
+%
+Therefore, we will measure the elastic modulus and toughness of the EA spicules's silica using nano-indentation. The toughness properties of the silica layers in the spicules of the sponge \textit{Monorhaphis chuni} have previously been measured using nano-indentation~\cite{woesz2006micromechanical, Miserez:2008wf} . We will use the same experimental protocol in our work. Briefly, the spicules will be embedded in epoxy, cross-sectioned using a diamond saw, and etched with hydrofluoric acid to reveal the spicule's cylinders and core. The core is roughly $20\unit{\mu m}$ in diameter, which is a sufficient area for performing the nano-indentation tests. We will compute the silica's toughness using the classic Lawn-Evans-Marshall model~\cite{lawn1975indentation, evans1976fracture}. Nano-indentation will also be used for measuring the silica's reduced elastic modulus, $E^*=E/(1-\nu^2)$. For that purpose we will follow the procedure described in~\cite{oliver1992improved}. The PI has previous experience measuring mechanical properties using nano-indentation~\cite{kesari2010role, kesari2011mechanics}.
+
+\item \textit{Measure the fracture toughness of spicule's weak interfaces.}
+Since the spicules' silica cylinders are both thin and brittle, measuring the fracture toughness, $g_{cI}$, of the weak interfaces between them is a challenging task. Motivated by the classical fiber push-out test~\cite{marshall1984indentation}, which is used to measure interface toughness in fiber reinforced composites, we have designed the following ``cylinder push-out'' test for measuring $g_{cI}$.
+
+One broken spicule segment from each bending test (see Task.2) will be embedded in epoxy and cross-sectioned using a diamond saw to create a 1--3 mm thick slab (see Figure~\ref{fig:spicule} (d)).
+%
+The exposed spicule cross-section will first be polished, and then a blunt diamond indenter will be used to push against the core.
+%
+On the opposite side of the slab, all silica cylinders will be mechanically supported (see Figure~\ref{fig:spicule} (d)).
+%
+\begin{figure}[t!]
+	\centering
+		\includegraphics[width=\textwidth]{../../Figures/spicule/Layer_spicule_ver7.pdf}
+		\caption{ \footnotesize Measurement of the mechanical properties and behavior of spicules. (a) The load-displacement response of a 2D spicule model shown in (c) predicted by the PFT tool for different numbers of interfaces. (b) Dimensionless load-displacement responses of 5 un-notched EA spicules in three-point bending measured using the custom-built MTS (solid lines). The left inset shows the onion ring architecture of an EA spicule. The dimensionless load-displacement responses of 5 spicules from a related species (\textit{T. aurantia}) that lack the onion ring architecture (see the right inset) are shown as dashed lines. The scale bars in both insets measure 10 $\mu$m. (c) The crack path evolution predicted by the PFT tool for a 2D spicule model loaded in three point bending. (d) Configuration of the the proposed cylinder push-out test. A spicule is embedded in epoxy, and cross sectioned along the orange planes. The silica cylinders from the section between the cutting planes are mechanically supported from below and the core is pushed from above by a diamond indenter (shown in gray). The light blue lines indicate the interfaces between silica cylinders and between the first cylinder and the core. The initial interface crack between the core and the first cylinder is shown in white. (e) A typical load-displacement response obtained from a fiber push-out test (reprinted from~\cite{bright1989interfacial}).}
+		\label{fig:spicule}
+\end{figure}
+%
+This configuration will freeze the relative motion of all weak interfaces except the first one between the core and its adjacent silica cylinder.
+%
+Thus, the core and the silica cylinders are analogous to the fiber and matrix, respectively, in the fiber push-out test~\cite{marshall1984indentation}.
+
+We will adapt the mechanical testing stage (MTS), which we use to perform the bending tests (Task.2), to perform the cylinder push-out test. During the test we will measure the applied force and indenter displacement. 
+%
+We have made preliminary estimates of the force and displacement ranges needed for this test and found that our modified MTS will be able to perform the cylinder push-out test with 50 nm displacement resolution and 4 $\mu$N force resolution.
+
+A typical load-displacement curve from a fiber push-out test performed on a silicon carbide fiber reinforced composite is shown in Figure~\ref{fig:spicule} (e). 
+%
+Initially, the applied force increases linearly with indenter displacement. 
+%
+The abrupt drop in force from $P_d$ to $P_d^\prime$ corresponds to the formation of a crack along the fiber-matrix interface as shown schematically in Figure~\ref{fig:spicule} (d).  
+%
+Upon further loading, the  applied force again increases until it reaches $P_i$, at which point the crack begins to propagate along the length of the fiber. 
+%
+If the length of the crack, $l_d$, at $P_d^\prime$ is large compared to the core radius, $r_0$, then the initiation force, $P_i$, is related to $g_{cI}$ as $P_i=2\pi \sqrt{r_0^3 g_{cI} E^*}$~\cite{outwater1970fracture, kerans1991theoretical, liang1993mechanics}. 
+%
+Knowing $E^*$ (from Task.1.ii), and $r_0$ (from Task.1.i), we will compute $g_{cI}$ by measuring $P_i$ in the cylinder push-out test. However, after the test is completed we must verify that $l_d \gg r_0$. 
+%
+We can compute $l_d$ by measuring the stiffness from the force-displacement response before and after crack nucleation, and choosing $l_d$ in a finite element model to match this stiffness ratio. 
+%
+If $l_d$ is not much larger than $r_0$, then we will numerically compute the energy release rate for the cylinder push out test using a finite element model~\cite{moran1987crack}.
+
+\end{enumerate}
+
+\paragraph{ Task.2} 
+We will characterize the spicules' failure behavior by measuring the load-displacement response of a notched spicule in a three-point bend, fracture test.
+%
+The PI has designed and built a MTS that is capable of performing the fracture tests with 200 nm displacement resolution and 20 $\mu$N force resolution. The MTS's design is based on that of an Atomic Force Microscope (AFM). The PI has considerable experience using the AFM for performing mechanical tests~\cite{kesariPML, kesariThesis}.
+%
+Load-displacement measurements from preliminary bending tests performed on un-notched spicules using the MTS are shown in Figure~\ref{fig:spicule} (b). 
+%
+In the proposed tests, we will cut notches in the spicules in order to match the initial damaged state of the spicules in the experiments with the simulations.
+%
+The notches in the spicules should be 5--25 $\mu$m long. The sharpness of the notch is required to be much smaller than the notch length and smaller than twice the smallest dimension in the material's architecture~\cite{kubler2013fracture,fett2008fracture}.
+%
+In the spicule, the smallest architectural dimensions are the thicknesses of its layers, which range from 200 to 1000 nm~\cite{monn2015new}. 
+%
+Through our preliminary research we were able to successfully  create 5--25 $\mu$m long notches with a sharpness of approximately 100 nm using focused ion beam (FIB) milling. We will further refine our FIB milling procedure over the course of the project.
+
+\paragraph{Task.3} We have designed the experiments and simulations so that the geometry, internal architecture, initial damage condition, and material properties match as closely as possible. Thus, we can characterize the PFT's predictive capability by whether it is able to reproduce the measured load-displacement curves. Based on statistics from our initial un-notched bending measurements, we plan on testing 60 spicules harvested from four different EA skeletons.

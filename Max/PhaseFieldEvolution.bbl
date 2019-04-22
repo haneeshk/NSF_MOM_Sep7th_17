@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}
+
+\bibitem{miehe2010}
+Christian Miehe, Martina Hofacker, and Fabian Welschinger.
+\newblock A phase field model for rate-independent crack propagation: Robust
+  algorithmic implementation based on operator splits.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  199(45):2765--2778, 2010.
+
+\end{thebibliography}

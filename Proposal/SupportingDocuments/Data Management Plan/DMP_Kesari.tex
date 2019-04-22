@@ -1,0 +1,120 @@
+\documentclass[10 pt, letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{plain}
+%
+%
+\fancyhead{}                    
+\fancyfoot{}                    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{unsrt}                                              %%
+
+%\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+%%\usepackage{cmbright}
+\usepackage[scaled=1]{helvet}
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+%\usepackage[usenames]{color}
+\usepackage{graphics,graphicx,wrapfig}
+\usepackage[bf,small,compact]{titlesec} % Allows customization of titles
+\usepackage[colorlinks=false]{hyperref}
+%\usepackage[notref,notcite]{showkeys}
+%\usepackage{showlabels}
+%\usepackage{labels}
+%\hypersetup{colorlinks=false}
+\usepackage{todonotes}
+\usepackage[font=small]{caption}
+\usepackage[sort&compress]{natbib}
+\urlstyle{same}
+\usepackage[hang]{footmisc}
+\usepackage{enumerate}
+\usepackage{epigraph}
+
+
+%\setlength{\parskip}{1em}
+
+\definecolor{orange}{cmyk}{0,0.5,1,0}
+\definecolor{HKblue}{cmyk}{65,4,0,0}
+\definecolor{HKblue2}{cmyk}{100,0,0,0}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+
+% User defined commands
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\norm}[1]{\ensuremath \lVer #1 \rVert}
+\newcommand{\rhat}{\hat{\rho}}
+\newcommand{\figwidth}{2.2in}
+
+\renewcommand{\comment}[2]{{\color{#1} $\blacksquare$ \footnote{\noindent \color{#1}#2} }}
+\newcommand{\commenti}[2]{{\color{#1} $\blacksquare$  \color{#1}#2} }
+\newcommand{\commentm}[2]{{\color{#1} $\blacksquare$  \marginpar{\color{#1}#2} }}
+
+
+\usepackage[normalem]{ulem}
+
+
+\rfoot{Haneesh Kesari, Data Management Plan \thepage/\pageref{LastPage}}
+%
+
+\begin{document}
+
+\begin{center}\textbf{\large{Data Management Plan}}\end{center}
+
+
+\paragraph{Sharing and Dissemination of Primary Data}
+
+Sharing of primary data will be implemented through (a) dissemination via peer-reviewed publications, conference proceedings including oral presentations, and (b) providing online access to the data through a cloud data storage system (Dropbox) upon receiving a request from academic researchers or educators. The PI will maintain the cloud data storage system. Manuscripts detailing the research results will be prepared and submitted for publication as soon as the research is completed.
+
+
+
+\paragraph{Types of Data}
+
+The proposed research includes measurement of the mechanical response of spicules in fracture tests, measurement of the elastic and failure properties of the spicules' constituent materials, and development of 3D computational models of the spicules. The proposed research will produce the following four types of data.
+
+\begin{enumerate}
+	\item Load-displacement measurements taken during the three-point bending fracture tests, nanoindentation tests, and cylinder push-out tests.
+	\item  SEM Images of spicule cross-sections, notches cut in the spicules for fracture testing, and surfaces of the fractured spicules.
+	\item Computer code that constructs the 3D models of the spicules in the aRVFT tool. The output of the computer code is not considered relevant data for management purposes, since it changes as the user changes the variables of the simulation (e.g., material properties or architectural parameters) and is easily reproducible. 
+	\item Mathematical equations underlying the new phase field-based fracture theory and its implementation as the aRVFT tool.
+\end{enumerate}
+
+\paragraph{Data and Metadata Standards}
+
+For the fracture and cylinder push-out tests, the measurement of the load-displacement response will begin with the collection of raw voltage-displacement data using National Instruments LabView software. The software stores the raw data as numerical tables in a tab-delimited text file. Raw data from each independent test are contained in separate files that are categorized by date and test number using a standardized naming convention. These raw data files may be viewed as graphs or tables. The files may be easily imported into MATLAB, Microsoft Excel, or other data processing applications, which significantly facilitates sharing and access. 
+
+The metadata will include lab-notes files, names of associated image data files, names of associated post-processing codes, and a readme file. The lab-notes file will detail the specific measurement or utility options needed for reproducing the test that produced the raw voltage-displacement data. This includes, but is not limited to, specimen geometry, gain and set-points of sensors and stages used during the experiment, and an itemization of any deviations from the standard testing procedure. The associated image files will consist of post-test SEM images of fracture specimens, SEM images from the alignment of the cylinder push-out test fixture, and micrographs taken during the fracture tests at every load increment. The post-processing codes will convert the raw data into load-displacement data.  The readme file will give all of the details regarding the conversion procedures and explain the usage of the post-processing codes, lab-notes files, along with necessary citations to the published literature on the experimental procedures employed.  The readme file and the lab-notes files will be in ASCII text format. The post-processing code and the generated load-displacement data will be in MATLAB programming language and MATLAB data format, respectively. The digital SEM and optical micrographs will be stored in TIF or portable network graphics (PNG) formats.
+
+The computer codes to construct the 3D models of the spicules will be written in Python and MATLAB programming languages. They will be stored in a file format that corresponds to the programming language in which they are written. In the computer codes, the author's name, copyright statement and date will be included in the header of every file. A readme file containing instructions for executing the computer code will be included along with the computer code. The details of these computer codes will be provided in the PI's publications related to the proposed project.
+
+The mathematical equations corresponding to the phase field-based fracture theory and its implementation as the aRVFT tool will be written in standard mathematical notation. All the symbols used in the equations will be defined alongside the equations. The equations along with the phase field-based fracture theory will be described in the PI's publications related to the proposed project.
+
+\paragraph{Polices for Accessing and Sharing}
+
+After the main findings of the research are accepted for publication, the data will be made accessible to academic researchers and educators who would like to use the data in their own research or in educational programs. While the PI retains the copyright to the original work, it is the PI's policy to share data with fellow researchers who would like to be collaborators. The data will be stored on the cloud data storage system Dropbox. The data on the Dropbox system can be accessed through the World Wide Web with the appropriate permissions. After receiving and screening a request for the data, the PI will provide access to the data by changing the permission settings on the Dropbox system. 
+
+\paragraph{Policies and Provisions for Re-Use, Re-Distribution}
+
+Consumers of the data produced during the project are likely to be other theoretical and experimental mechanics researchers. Re-use within the current research and teaching program is expected. If fellow researchers contact the author regarding re-use of the computer code, the author will decide upon sharing on a case-by-case basis. Criteria include appropriateness, possible collaboration, and commercialization potential. Should the data lead to derivatives with potential commercialization, consultation with Brown University's Technology Venture Office may be required prior to re-distribution.
+
+\paragraph{Plans for Archiving and Preservation}
+
+The data will be maintained and updated as described above for five years past the completion of the project. During this time, data will be stored in two external hard drives, one in the PI's lab and the other in a separate location, as well as on the cloud data storage system Dropbox.
+
+\end{document}
